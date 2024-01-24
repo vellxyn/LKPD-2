@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// start lkpd 2 
+
+    // hituung gaji bersih
+       let nama = 'Abdul'
+       const gaji = 2000000
+
+    var tunjangan = 0.20 * gaji;
+    var pajak = 0.15 * (gaji + tunjangan)
+    var gajiBersih = gaji + tunjangan - pajak;
+
+      console.log('nama : ' + nama)
+      console.log('tunjangan : ' + tunjangan)
+      console.log('pajak : ' + pajak)
+      console.log('gajiBersih : ' + gajiBersih)
+      
+
+    
+    //jam ke menit
+      function konversiWaktu(jam, menit, detik) {
+        var ubah = (jam * 3600) + (menit * 60) + detik;
+        console.log('total detik', + ubah)
+        
+      }
+       konversiWaktu(1, 30, 40)
+     
+    //konversi total detik
+      let totalDetik = 5440
+
+        var jam = Math.floor(totalDetik / 3600)
+        totalDetik %= 3600
+        var menit = Math.floor(totalDetik / 60)
+        var detik = totalDetik % 60;
+
+    console.log(`${jam} jam ${menit} menit ${detik} detik`)
+
+//end lkpd 2
+        
+    </script>
+  </body>
+</html>
